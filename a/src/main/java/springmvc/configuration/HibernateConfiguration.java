@@ -58,6 +58,8 @@ public class HibernateConfiguration {
 	// </props>
 	// </property>
 	// </bean>
+	//So LocalSessionFactoryBean's getObject() method returns 
+	//a SessionFactory object.
 	@Bean
 	public LocalSessionFactoryBean sessionFactory() {
 		LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();

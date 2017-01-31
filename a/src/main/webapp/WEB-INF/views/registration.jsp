@@ -21,7 +21,7 @@
  
 <body>
  
-    <h2>Registration Form</h2>
+    <%--<h2>Registration Form</h2>
   
     <form:form method="POST" modelAttribute="employee">
         <form:input type="hidden" path="id" id="id"/>
@@ -66,6 +66,6 @@
     </form:form>
     <br/>
     <br/>
-    Go back to <a href="<c:url value='/list' />">List of All Employees</a>
+    Go back to <a href="<c:url value='/list' />">List of All Employees</a>--%>
 </body>
 </html>

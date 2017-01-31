@@ -8,9 +8,7 @@ import org.hibernate.Query;
 import org.springframework.stereotype.Repository;
 
 import springmvc.model.Employee;
- 
-
-    
+     
     @Repository("employeeDao")
     public class EmployeeDaoImpl extends AbstractDao<Integer, Employee> implements EmployeeDao {
      
@@ -39,6 +37,9 @@ import springmvc.model.Employee;
             criteria.add(Restrictions.eq("ssn", ssn));
             return (Employee) criteria.uniqueResult();
         }
+}
+        
+        
         
         
       //@Repository("employeeDao")
@@ -78,4 +79,3 @@ import springmvc.model.Employee;
 //          public Employee findEmployeeBySsn(String ssn) {
 //              return null;
 //          }
-}
